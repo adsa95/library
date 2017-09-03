@@ -141,7 +141,7 @@ class DataFeed
         foreach ($mixedArray as $tagName => $ids) {
             $obj = $this->getModelByTag($tagName);
             $keyName = $this->getKeyNameByTag($tagName);
-            $collectionArray[$tagName] = $obj->whereIn($keyName, $ids)->get();
+            $collectionArray[$tagName] = $obj->whereIn($keyName, $ids)->offset(0)->limit(count($ids))->get();
         }
 
         /*
