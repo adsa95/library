@@ -228,7 +228,7 @@ class DataFeed
         foreach ($this->collection as $tag => $data)
         {
             extract($data);
-            $cleanQuery = clone $item->getQuery();
+            $cleanQuery = clone $item->newQuery()->toBase();
             $model = $item->getModel();
 
             $sorting = $model->getTable() . '.';
