@@ -111,12 +111,14 @@ class Definitions
             'less',
             'scss',
             'ics',
+            'odt',
             'doc',
             'docx',
             'pdf',
             'swf',
             'txt',
             'xml',
+            'ods',
             'xls',
             'xlsx',
             'eot',
@@ -182,8 +184,7 @@ class Definitions
             'bmp',
             'png',
             'webp',
-            'gif',
-            'svg'
+            'gif'
         ];
     }
 
